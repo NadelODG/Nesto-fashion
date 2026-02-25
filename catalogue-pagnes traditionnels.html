@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Catalogue-pagnes | NETO FASHION</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root {
+  --noir:#0b0b12;
+  --or:#d4af37;
+  --violet:#6a0dad;
+  --blanc:#f8f8f8;
+  --vert:#25D366;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:"Poppins",sans-serif;
+  background:linear-gradient(180deg,#f8f8f8,#e9e9ef);
+  color:#222;
+}
+
+a{text-decoration:none}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,var(--noir),#1a1a2e);
+  padding:80px 20px;
+  text-align:center;
+  position:relative;
+}
+
+header h1{
+  font-family:"Playfair Display",serif;
+  font-size:3.2rem;
+  background:linear-gradient(90deg,var(--or),#fff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+header p{color:var(--or);margin-top:15px;}
+
+/* BOUTON RETOUR */
+.retour{
+  position:absolute;
+  top:20px;
+  left:20px;
+  background:var(--or);
+  color:#000;
+  padding:10px 18px;
+  border-radius:30px;
+  font-weight:600;
+  transition:.3s;
+}
+.retour:hover{background:#fff;}
+
+/* SECTION */
+section{padding:90px 20px;}
+h2{
+  text-align:center;
+  font-size:2.5rem;
+  margin-bottom:60px;
+  font-family:"Playfair Display",serif;
+  color:var(--violet);
+}
+h2::after{
+  content:"";
+  width:90px;
+  height:4px;
+  background:var(--or);
+  display:block;
+  margin:15px auto 0;
+  border-radius:10px;
+}
+
+/* CATALOGUE */
+.catalogue{
+  max-width:1300px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+}
+
+.card img{
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: center; 
+}
+
+@media (max-width: 768px) {
+  .card img {
+    height: auto;       
+    object-fit: contain; 
+  }
+}
+
+.card-content{
+  padding:30px;
+  text-align:center;
+}
+
+.card-content h3{
+  color:var(--violet);
+  font-family:"Playfair Display",serif;
+  margin-bottom:10px;
+}
+
+.card-content p{
+  font-size:.95rem;
+  margin-bottom:15px;
+}
+
+/* PUCE STICKER DEVANT */
+.card-content h3::before {
+  content: "✔";
+  color: var(--or);
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
+/* BARRE COMMANDE */
+.command-bar{
+  background:var(--vert);
+  text-align:center;
+  padding:15px;
+}
+
+.command-bar a{
+  color:#fff;
+  font-weight:600;
+  font-size:1rem;
+}
+
+/* FOOTER */
+footer{
+  background:var(--noir);
+  color:#aaa;
+  text-align:center;
+  padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="retour">← Retour</a>
+  <h1>NETO FASHION</h1>
+  <p>Catalogue pagnes</p>
+</header>
+
+<section>
+<h2>Pagnes disponibles</h2>
+
+<div class="catalogue">
+
+<!-- PAGNE 1 -->
+<div class="card"><img src="images/Pagne1.jpg"><div class="card-content"><h3>Pagne 1</h3><p>Tissu premium et motifs traditionnels</p></div><div class="command-bar"><a href="https://wa.me/22653027921?text=...pagne%201" target="_blank">Commander</a></div></div>
+
+<!-- PAGNE 2 -->
+<div class="card"><img src="images/Pagne2.jpg"><div class="card-content"><h3>Pagne 2</h3><p>Style chic et authentique</p></div><div class="command-bar"><a href="https://wa.me/22653027921?text=...pagne%202" target="_blank">Commander</a></div></div>
+
+<!-- PAGNE 3 -->
+<div class="card"><img src="images/Pagne3.jpg"><div class="card-content"><h3>Pagne 3</h3><p>Motifs élégants et confortables</p></div><div class="command-bar"><a href="https://wa.me/22653027921?text=...pagne%203" target="_blank">Commander</a></div></div>
+
+<!-- PAGNE 4 -->
+<div class="card"><img src="images/Pagne4.jpg"><div class="card-content"><h3>Pagne 4</h3><p>Couleurs vibrantes et modernes</p></div><div class="command-bar"><a href="https://wa.me/22653027921?text=...pagne%204" target="_blank">Commander</a></div></div>
+
+<!-- PAGNE 5 -->
+<div class="card"><img src="images/Pagne5.jpg"><div class="card-content"><h3>Pagne 5</h3><p>Authenticité africaine et élégance</p></div><div class="command-bar"><a href="https://wa.me/22653027921?text=...pagne%205" target="_blank">Commander</a></div></div>
+
+<!-- PAGNE 6 -->
+<div class="card"><img src="images/Pagne6.jpg"><div class="card-content"><h3>Pagne 6</h3><p>Motifs raffinés et intemporels</p></div><div class="command-bar"><a href="https://wa.me/22653027921?text=...pagne%206" target="_blank">Commander</a></div></div>
+
+<!-- PAGNE 7 -->
+<div class="card"><img src="images/Pagne7.jpg"><div class="card-content"><h3>Pagne 7</h3><p>Style décontracté et chic</p></div><div class="command-bar"><a href="https://wa.me/22653027921?text=...pagne%207" target="_blank">Commander</a></div></div>
+
+<!-- PAGNE 8 -->
+<div class="card"><img src="images/Pagne8.jpg"><div class="card-content"><h3>Pagne 8</h3><p>Confort et élégance</p></div><div class="command-bar"><a href="https://wa.me/22653027921?text=...pagne%208" target="_blank">Commander</a></div></div>
+
+<!-- PAGNE 9 -->
+<div class="card"><img src="images/Pagne9.jpg"><div class="card-content"><h3>Pagne 9</h3><p>Style moderne et raffiné</p></div><div class="command-bar"><a href="https://wa.me/22653027921?text=...pagne%209" target="_blank">Commander</a></div></div>
+
+</div>
+</section>
+
+<footer>
+  © 2026 NETO FASHION – Tous droits réservés
+</footer>
+
+</body>
+</html>

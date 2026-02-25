@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>NETO FASHION | Couture de Luxe & Boutique</title>
+<meta name="viewport" content="width=1024">
+
+<style>
+:root {
+  --noir: #0b0b12;
+  --or: #d4af37;
+  --violet: #6a0dad;
+  --blanc: #f8f8f8;
+  --gris: #e9e9ef;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg,#f8f8f8,#e9e9ef);
+  color:#222;
+  body {
+  font-size: 38px;  
+}
+h1 {
+  font-size: 40px;
+}
+p {
+  font-size: 24px;
+}
+
+}
+
+/* lien neutre pour cartes */
+.card-link { text-decoration:none; color:inherit; }
+
+/* ================= HEADER ================= */
+/* HEADER */
+header {
+  min-height: 100vh;
+  width: 100%;
+  background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.75)),
+    url("images/header.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+  height: auto;
+
+}
+
+
+
+header h1 {
+  font-family:"Playfair Display",serif;
+  font-size:4rem;
+  letter-spacing:6px;
+  background:linear-gradient(90deg,var(--or),#fff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+header p {
+  margin-top:20px;
+  font-size:1.3rem;
+  color:var(--or);
+}
+
+/* ================= GLOBAL ================= */
+section { padding:100px 20px; }
+
+.section-light { background:var(--blanc); }
+.section-dark  { background:linear-gradient(135deg,var(--noir),#1a1a2e); color:var(--blanc); }
+
+h2 {
+  text-align:center;
+  font-size:2.6rem;
+  margin-bottom:60px;
+  font-family:"Playfair Display",serif;
+  color:var(--violet);
+}
+
+h2::after {
+  content:"";
+  width:90px;
+  height:4px;
+  background:var(--or);
+  display:block;
+  margin:15px auto 0;
+  border-radius:10px;
+}
+
+/* ================= ABOUT ================= */
+.about {
+  max-width:1000px;
+  margin:auto;
+  background:var(--blanc);
+  padding:70px;
+  border-radius:25px;
+  box-shadow:0 30px 60px rgba(0,0,0,.15);
+  text-align:center;
+  font-size:1.15rem;
+  line-height:1.8;
+}
+
+/* ================= CARDS ================= */
+.categories {
+  max-width:1300px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+}
+
+.card {
+  background:var(--blanc);
+  border-radius:25px;
+  overflow:hidden;
+  box-shadow:0 20px 45px rgba(0,0,0,.2);
+  transition:.4s;
+  border:1px solid var(--or);
+}
+
+.card:hover { transform:translateY(-15px); }
+
+.card img{
+
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+
+ object-fit: cover;    
+  object-position: center; 
+}
+
+@media (ax-width: 100%) {
+  .card img {
+    height: auto;       
+    object-fit: contain; 
+  }
+}
+
+
+.card-content {
+  padding:30px;
+  text-align:center;
+}
+
+.card-content h3 {
+  color:var(--violet);
+  margin-bottom:10px;
+  font-family:"Playfair Display",serif;
+}
+
+/* ================= SERVICES ================= */
+.services {
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:40px;
+}
+
+.service {
+  background:rgba(255,255,255,.08);
+  padding:40px;
+  border-radius:25px;
+  border-left:6px solid var(--or);
+}
+
+/* ================= GALERIE ================= */
+.gallery {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+
+ object-fit: cover;    
+  object-position: center; 
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+    height: auto;
+    object-fit: contain;
+    max-width: 100%;
+  height: auto;
+
+  }
+}
+
+.gallery img {
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  border:2px solid var(--or);
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+
+ object-fit: cover;    
+  object-position: center; 
+}
+
+@media (max-width: 768px) {
+  .gallery img {
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+/* ================= AVIS ================= */
+.comments {
+  max-width:1200px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+}
+
+.comment {
+  background:rgba(255,255,255,.08);
+  padding:35px;
+  border-left:5px solid var(--or);
+  border-radius:20px;
+  font-style:italic;
+}
+
+/* ================= CONTACT ================= */
+.contact-box {
+  max-width:750px;
+  margin:auto;
+  background:var(--blanc);
+  padding:70px;
+  border-radius:30px;
+  text-align:center;
+  box-shadow:0 25px 50px rgba(0,0,0,.2);
+}
+
+.btn {
+  display:inline-block;
+  margin-top:30px;
+  background:#25D366;
+  color:#fff;
+  padding:18px 45px;
+  border-radius:50px;
+  text-decoration:none;
+  font-size:1.1rem;
+}
+
+.apropos-logo{
+  width:150px;
+  max-width:100%;
+}
+
+.btn-tiktok {
+  display:inline-block;
+  margin-top:30px;
+  background:#000;
+  color:#fff;
+  padding:18px 45px;
+  border-radius:50px;
+  text-decoration:none;
+  font-size:1.1rem;
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background:var(--noir);
+  color:#aaa;
+  text-align:center;
+  padding:30px;
+}
+</style>
+<section>
+  <div class="container">
+</head>
+
+<body>
+
+<header>
+  <div>
+    <h1>NETO FASHION</h1>
+    <p>Boutique • Couture sur mesure • Tissus de luxe</p>
+  
+  </div>
+</header>
+
+<!-- ================= A PROPOS ================= -->
+<section class="section-light">
+  <h2>À propos</h2>
+  <div class="about">
+     <img src="images/Galerie1.jpg" alt="Logo NETO FASHION" class="apropos-logo">
+     <strong>L'ENTREPRISE NETO FASHION SARL</strong> ( IFU: 0026177K / RCCM : BFOUA-01-2024-B13-02728 ) est une  maison de couture et aussi une boutique spécialisée dans la création de vêtements élégants, modernes et traditionnels.
+    
+    <br><br>
+    Nous travaillons également avec les <strong>Entreprises </strong> (pour la confection d'uniformes professionnels) les <strong>Ecoles</strong> (pour les tenues ) et  <strong>l'Administration publique</strong> (pour la réception de certains marchés). Nous mettons en valeur le savoir-faire artisanal africain à travers
+    des tissus de qualité, des coupes soignées et des finitions haut de gamme.
+    <br><br>
+    <strong>Chaque création est pensée pour sublimer votre style et affirmer votre identité.</strong>
+  </div>
+</section>
+
+<section class="section-dark">
+<h2>Créations sur mesure</h2>
+<div class="categories">
+
+<a href="catalogue-vestes.html" class="card-link"><div class="card"><img src="images\Veste9.jpg"><div class="card-content"><h3>Costumes     👉 Cliquez ici</h3></div></div></a>
+<a href="catalogue-chemises.html" class="card-link"><div class="card"><img src="images\Chemise1.jpg"><div class="card-content"><h3>Chemises 👉 Cliquez ici</h3></div></div></a>
+<a href="catalogue-pantalons.html" class="card-link"><div class="card"><img src="images\Pantalon0.jpg"><div class="card-content"><h3>Pantalons 👉 Cliquez ici</h3></div></div></a>
+<a href="catalogue-tenue traditionnelles.html" class="card-link"><div class="card"><img src="images\Tenue0.jpg"><div class="card-content"><h3>Tenues traditionnelles  👉 Cliquez ici</h3></div></div></a>
+<a href="catalogue-tuniques.html" class="card-link"><div class="card"><img src="images\Tunique1.jpg"><div class="card-content"><h3>Tuniques  👉 Cliquez ici</h3></div></div></a>
+<a href="catalogue-bazin et broderies.html" class="card-link"><div class="card"><img src="images\Bazin0.jpg"><div class="card-content"><h3>Bazin et Broderies  👉 Cliquez ici</h3></div></div></a>
+<a href="catalogue-pro.html" class="card-link"><div class="card"><img src="images\Pro0.jpg"><div class="card-content"><h3>Tenues professionnelles  👉 Cliquez ici</h3></div></div></a>
+</div>
+</section>
+
+<section class="section-dark">
+<h2>Nos services</h2>
+<div class="services">
+  <div class="service">Confection sur mesure</div>
+  <div class="service">Retouches professionnelles</div>
+  <div class="service">Conseils en style</div>
+  <div class="service">Commandes événements</div>
+</div>
+</section>
+
+<section class="section-light">
+<h2>Boutique Prêt-à-porter</h2>
+<div class="categories">
+
+<a href="Vestes-boutique.html" class="card-link"><div class="card"><img src= "images\Veste1.jpg"><div class="card-content"><h3>Costumes 👉 Cliquez ici</h3></div></div></a>
+
+<a href="Chemises-boutique.html" class="card-link"><div class="card"><img src= "images\Chemise7.jpg"><div class="card-content"><h3>Chemises 👉 Cliquez ici</h3></div></div></a>
+<a href="Pantalons-boutique.html" class="card-link"><div class="card"><img src="images\PantalonD.jpg"><div class="card-content"><h3>Pantalons 👉 Cliquez ici</h3></div></div></a>
+
+<a href="Tuniques-boutique.html" class="card-link"><div class="card"><img src="images\TuniqueH.jpg"><div class="card-content"><h3>Tuniques 👉 Cliquez ici</h3></div></div></a>
+
+<a href="Robes-boutiques.html" class="card-link"><div class="card"><img src="images\Robe1.jpg"><div class="card-content"><h3>Robes 👉 Cliquez ici</h3></div></div></a>
+
+<a href="Tissus-boutique.html" class="card-link"><div class="card"><img src="images\TissuA.jpg"><div class="card-content"><h3>Tissus & Accessoires 👉</h3></div></div></a>
+
+</div>
+</section>
+
+<section class="section-light">
+<h2>Galerie</h2>
+<div class="gallery">
+  <img src="images\Galerie1.jpg"></a>
+  <img src="images\Galerie2.jpg"></a>
+  <img src="images\Galerie3.jpg"></a>
+  
+</div>
+</section>
+
+<section class="section-dark">
+<h2>Avis clients</h2>
+<div class="comments">
+  <div class="comment">Travail très soigné et professionnel.</div>
+  <div class="comment">Service rapide et qualité exceptionnelle.</div>
+  <div class="comment">Nous respectons rigoureusement tous les termes de nos contrats avec les clients.</div>
+  <div class="comment">Client satisfait ou remboursé.</div>
+  <div class="comment">La référence couture à Ouagadougou.</div>
+  <div class="comment">Nous contacter directement pour tous avis ou critiques.</div>
+</div>
+</section>
+
+<section class="section-light">
+<h2>Contactez-nous</h2>
+<div class="contact-box">
+<p>📍 Ouagadougou (Bendogo)</p>
+<p>📞 +226 74103823 | 79724116</p>
+
+<a class="btn" href="https://wa.me/22653027921" target="_blank">WhatsApp</a>
+<a class="btn-tiktok" href="https://www.tiktok.com/@neto.fashion8?_r=1&_t=ZS-93t9iqTqKhT"
+ target="_blank">TikTok</a>
+</div>
+</section>
+</div>
+</section>
+<footer>
+© 2026 NETO FASHION — Couture de luxe
+</footer>
+
+</body>
+</html>

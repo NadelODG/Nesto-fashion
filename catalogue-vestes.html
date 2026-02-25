@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Catalogue-vestes | NETO FASHION</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root {
+  --noir:#0b0b12;
+  --or:#d4af37;
+  --violet:#6a0dad;
+  --blanc:#f8f8f8;
+  --vert:#25D366;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:"Poppins",sans-serif;
+  background:linear-gradient(180deg,#f8f8f8,#e9e9ef);
+  color:#222;
+}
+
+a{text-decoration:none}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,var(--noir),#1a1a2e);
+  padding:80px 20px;
+  text-align:center;
+  position:relative;
+}
+
+header h1{
+  font-family:"Playfair Display",serif;
+  font-size:3.2rem;
+  background:linear-gradient(90deg,var(--or),#fff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+header p{color:var(--or);margin-top:15px;}
+
+/* BOUTON RETOUR */
+.retour{
+  position:absolute;
+  top:20px;
+  left:20px;
+  background:var(--or);
+  color:#000;
+  padding:10px 18px;
+  border-radius:30px;
+  font-weight:600;
+  transition:.3s;
+}
+.retour:hover{background:#fff;}
+
+/* SECTION */
+section{padding:90px 20px;}
+
+h2{
+  text-align:center;
+  font-size:2.5rem;
+  margin-bottom:60px;
+  font-family:"Playfair Display",serif;
+  color:var(--violet);
+}
+h2::after{
+  content:"";
+  width:90px;
+  height:4px;
+  background:var(--or);
+  display:block;
+  margin:15px auto 0;
+  border-radius:10px;
+}
+
+/* CATALOGUE */
+.catalogue{
+  max-width:1300px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+}
+
+.card{
+  background:var(--blanc);
+  border-radius:25px;
+  overflow:hidden;
+  box-shadow:0 20px 45px rgba(0,0,0,.2);
+  border:1px solid var(--or);
+  transition:.4s;
+  display:flex;
+  flex-direction:column;
+}
+.card:hover{transform:translateY(-15px);}
+
+.card img{
+
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+
+ object-fit: cover;    
+  object-position: center; 
+}
+
+@media (max-width: 768px) {
+  .card img {
+    height: auto;       
+    object-fit: contain; 
+  }
+}
+
+
+
+.card-content{
+  padding:30px;
+  text-align:center;
+}
+
+.card-content h3{
+  color:var(--violet);
+  font-family:"Playfair Display",serif;
+  margin-bottom:10px;
+}
+
+.card-content p{
+  font-size:.95rem;
+  margin-bottom:15px;
+}
+
+/* BARRE COMMANDE */
+.command-bar{
+  background:var(--vert);
+  text-align:center;
+  padding:15px;
+}
+
+.command-bar a{
+  color:#fff;
+  font-weight:600;
+  font-size:1rem;
+}
+
+/* FOOTER */
+footer{
+  background:var(--noir);
+  color:#aaa;
+  text-align:center;
+  padding:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="retour">← Retour</a>
+  <h1>NETO FASHION</h1>
+  <p>Catalogue vestes</p>
+</header>
+
+<section>
+<h2>Vestes disponibles</h2>
+
+<div class="catalogue">
+
+<!-- VESTE 1 -->
+<div class="card">
+  <img src="images\Veste1.jpg">
+  <div class="card-content">
+    <h3>Veste 1</h3>
+    <p>Élégance professionnelle – Coupe moderne</p>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22653027921?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20une%20veste%201" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+<!-- VESTE 2 -->
+<div class="card">
+  <img src="images\Veste2.jpg">
+  <div class="card-content">
+    <h3>Veste 2</h3>
+    <p>Qualité premium – Finition luxe</p>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/2253027921?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20une%20Veste%203" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+<!-- VESTE 3 -->
+<div class="card">
+  <img src="images\Veste3.jpg">
+  <div class="card-content">
+    <h3>Veste 3</h3>
+    <p>Qualité premium – Finition luxe</p>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22653027921?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20une%20veste%203" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+<!-- VESTE 4 -->
+<div class="card">
+  <img src="images\Veste4.jpg">
+  <div class="card-content">
+    <h3>Veste 4</h3>
+    <p>Qualité premium – Finition luxe</p>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22653027921?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20une%20veste%204" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+<!-- VESTE 5 -->
+<div class="card">
+  <img src="images\Veste5.jpg">
+  <div class="card-content">
+    <h3>Veste 5</h3>
+    <p>Qualité premium – Finition luxe</p>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22653027921?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20une%20veste%205" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+<!-- VESTE 6 -->
+<div class="card">
+  <img src="images\Veste6.jpg">
+  <div class="card-content">
+    <h3>Veste 6</h3>
+    <p>Qualité premium – Finition luxe</p>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22653027921?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20une%20veste%20en%20bazin" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+<!-- VESTE 7 -->
+<div class="card">
+  <img src="images\Veste7.jpg">
+  <div class="card-content">
+    <h3>Veste 7</h3>
+    <p>Qualité premium – Finition luxe</p>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22653027921?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20une%20veste%207" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+<!-- VESTE 8 -->
+<div class="card">
+  <img src="images\Veste8.jpg">
+  <div class="card-content">
+    <h3>Veste 8</h3>
+    <p>Qualité premium – Finition luxe</p>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22653027921?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20une%20veste%208 target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+<!-- VESTE 9 -->
+<div class="card">
+  <img src="images\Veste9.jpg">
+  <div class="card-content">
+    <h3>Veste 9</h3>
+    <p>Qualité premium – Finition luxe</p>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22653027921?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20une%20veste%20" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+<!-- VESTE 10 -->
+<div class="card">
+  <img src="images\Veste10.jpg">
+  <div class="card-content">
+    <h3>Veste 10</h3>
+    <p>Qualité premium – Finition luxe</p>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22653027921?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20une%20veste%2010" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+<!-- VESTE 11-->
+<div class="card">
+  <img src="images\Veste11.jpg">
+  <div class="card-content">
+    <h3>Veste 11</h3>
+    <p>Qualité premium – Finition luxe</p>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22653027921?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20une%20veste%2011" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 NETO FASHION — Catalogue vestes
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+</!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Pantalons Prêt-à-porter | NETO FASHION</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --noir:#0b0b12;
+  --or:#d4af37;
+  --violet:#6a0dad;
+  --blanc:#f8f8f8;
+  --vert:#25D366;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+  font-family:"Poppins",sans-serif;
+  background:linear-gradient(180deg,#f8f8f8,#e9e9ef);
+  color:#222;
+}
+
+a{text-decoration:none}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,var(--noir),#1a1a2e);
+  padding:80px 20px;
+  text-align:center;
+  position:relative;
+}
+
+header h1{
+  font-family:"Playfair Display",serif;
+  font-size:3.2rem;
+  background:linear-gradient(90deg,var(--or),#fff);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+header p{color:var(--or);margin-top:15px;}
+
+/* BOUTON RETOUR */
+.retour{
+  position:absolute;
+  top:20px;
+  left:20px;
+  background:var(--or);
+  color:#000;
+  padding:10px 18px;
+  border-radius:30px;
+  font-weight:600;
+}
+
+/* SECTION */
+section{padding:90px 20px;}
+
+h2{
+  text-align:center;
+  font-size:2.5rem;
+  margin-bottom:60px;
+  font-family:"Playfair Display",serif;
+  color:var(--violet);
+}
+
+h2::after{
+  content:"";
+  width:90px;
+  height:4px;
+  background:var(--or);
+  display:block;
+  margin:15px auto 0;
+  border-radius:10px;
+}
+
+/* CATALOGUE */
+.catalogue{
+  max-width:1300px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+}
+
+.card{
+  background:var(--blanc);
+  border-radius:25px;
+  overflow:hidden;
+  box-shadow:0 20px 45px rgba(0,0,0,.2);
+  border:1px solid var(--or);
+  display:flex;
+  flex-direction:column;
+}
+
+.card img{
+  width:100%;
+  height:420px;
+  object-fit:cover;
+}
+
+.card-content{
+  padding:25px;
+  text-align:center;
+  flex:1;
+}
+
+.card-content h3{
+  color:var(--violet);
+  font-family:"Playfair Display",serif;
+  margin-bottom:10px;
+}
+
+.card-content p{
+  font-size:.95rem;
+  margin-bottom:10px;
+}
+
+/* PRIX */
+.price{
+  font-size:1.2rem;
+  font-weight:700;
+  color:var(--or);
+  margin-bottom:15px;
+}
+
+/* BARRE COMMANDE */
+.command-bar{
+  background:var(--vert);
+  text-align:center;
+  padding:15px;
+}
+
+.command-bar a{
+  color:#fff;
+  font-weight:600;
+}
+
+/* FOOTER */
+footer{
+  background:var(--noir);
+  color:#aaa;
+  text-align:center;
+  padding:30px;
+}
+
+/* MOBILE */
+@media (max-width:768px){
+  header h1{font-size:2.3rem;}
+  h2{font-size:2rem;}
+  section{padding:60px 15px;}
+  .card img{height:auto;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <a href="index.html" class="retour">← Retour</a>
+  <h1>NETO FASHION</h1>
+  <p>Catalogue Pantalons</p>
+</header>
+
+<section>
+<h2>Pantalons disponibles
+    <p>Vous pouvez nous contacter pour voir plus de modèles</p>
+</h2>
+
+<div class="catalogue">
+
+<!-- PANTALON 1 -->
+<div class="card">
+  <img src="images/PantalonA.jpg">
+  <div class="card-content">
+    <h3>Pantalon moderne 1</h3>
+    <p>Coupe élégante – Confort premium</p>
+    <div class="price">10 000 FCFA</div>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22669598479?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20le%20pantalon%201" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+<!-- PANTALON 2 -->
+<div class="card">
+  <img src="images/PantalonB.jpg">
+  <div class="card-content">
+    <h3>Pantalon classique 2</h3>
+    <p>Style professionnel</p>
+    <div class="price">10 000 FCFA</div>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22669598479?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20le%20pantalon%202" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+<!-- PANTALON 3 -->
+<div class="card">
+  <img src="images/PantalonC.jpg">
+  <div class="card-content">
+    <h3>Pantalon classique 3</h3>
+    <p>Finitions soignées</p>
+    <div class="price">10 000 FCFA</div>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22669598479?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20le%20pantalon%203" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+<!-- PANTALON 4 -->
+<div class="card">
+  <img src="images/PantalonD.jpg">
+  <div class="card-content">
+    <h3>Pantalon classique 4</h3>
+    <p>Finitions soignées</p>
+    <div class="price">10 000 FCFA</div>
+  </div>
+  <div class="command-bar">
+    <a href="https://wa.me/22669598479?text=Bonjour%20NETO%20FASHION,%20je%20souhaite%20commander%20le%20pantalon%204" target="_blank">
+      Commander
+    </a>
+  </div>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 NETO FASHION — Catalogue Pantalons
+</footer>
+
+</body>
+</html>
